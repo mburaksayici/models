@@ -31,7 +31,7 @@ from lstm_object_detection.protos import input_reader_google_pb2
 from object_detection.core import preprocessor
 from object_detection.core import preprocessor_cache
 from object_detection.core import standard_fields as fields
-from object_detection.protos import input_reader_pb2
+from tfmodels.research.object_detection.protos import input_reader_pb2
 from object_detection.utils import ops as util_ops
 
 parallel_reader = slim.parallel_reader

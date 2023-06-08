@@ -21,7 +21,7 @@ from object_detection.builders import model_builder
 from object_detection.builders import model_builder_test
 from object_detection.meta_architectures import context_rcnn_meta_arch
 from object_detection.meta_architectures import ssd_meta_arch
-from object_detection.protos import losses_pb2
+from tfmodels.research.object_detection.protos import losses_pb2
 from object_detection.utils import tf_version
 
 

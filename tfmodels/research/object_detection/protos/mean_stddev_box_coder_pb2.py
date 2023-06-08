@@ -16,7 +16,7 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='object_detection/protos/mean_stddev_box_coder.proto',
-  package='object_detection.protos',
+  package='tfmodels.research.object_detection.protos',
   syntax='proto2',
   serialized_options=None,
   serialized_pb=_b('\n3object_detection/protos/mean_stddev_box_coder.proto\x12\x17object_detection.protos\"*\n\x12MeanStddevBoxCoder\x12\x14\n\x06stddev\x18\x01 \x01(\x02:\x04\x30.01')
@@ -27,13 +27,13 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _MEANSTDDEVBOXCODER = _descriptor.Descriptor(
   name='MeanStddevBoxCoder',
-  full_name='object_detection.protos.MeanStddevBoxCoder',
+  full_name='tfmodels.research.object_detection.protos.MeanStddevBoxCoder',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='stddev', full_name='object_detection.protos.MeanStddevBoxCoder.stddev', index=0,
+      name='stddev', full_name='tfmodels.research.object_detection.protos.MeanStddevBoxCoder.stddev', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0.01),
       message_type=None, enum_type=None, containing_type=None,
@@ -60,8 +60,8 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 MeanStddevBoxCoder = _reflection.GeneratedProtocolMessageType('MeanStddevBoxCoder', (_message.Message,), dict(
   DESCRIPTOR = _MEANSTDDEVBOXCODER,
-  __module__ = 'object_detection.protos.mean_stddev_box_coder_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.MeanStddevBoxCoder)
+  __module__ = 'tfmodels.research.object_detection.protos.mean_stddev_box_coder_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.MeanStddevBoxCoder)
   ))
 _sym_db.RegisterMessage(MeanStddevBoxCoder)
 

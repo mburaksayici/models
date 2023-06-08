@@ -20,7 +20,7 @@ from google.protobuf import text_format
 from lstm_object_detection import model_builder
 from lstm_object_detection.meta_architectures import lstm_ssd_meta_arch
 from lstm_object_detection.protos import pipeline_pb2 as internal_pipeline_pb2
-from object_detection.protos import pipeline_pb2
+from tfmodels.research.object_detection.protos import pipeline_pb2
 
 
 class ModelBuilderTest(tf.test.TestCase):

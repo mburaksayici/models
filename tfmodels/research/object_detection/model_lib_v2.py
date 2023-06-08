@@ -31,7 +31,7 @@ from object_detection import inputs
 from object_detection import model_lib
 from object_detection.builders import optimizer_builder
 from object_detection.core import standard_fields as fields
-from object_detection.protos import train_pb2
+from tfmodels.research.object_detection.protos import train_pb2
 from object_detection.utils import config_util
 from object_detection.utils import label_map_util
 from object_detection.utils import ops

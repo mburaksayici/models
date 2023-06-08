@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package object_detection.protos;
+package tfmodels.research.object_detection.protos;
 
 import "object_detection/protos/box_coder.proto";
 import "object_detection/protos/matcher.proto";

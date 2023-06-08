@@ -16,17 +16,17 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='object_detection/protos/losses.proto',
-  package='object_detection.protos',
+  package='tfmodels.research.object_detection.protos',
   syntax='proto2',
   serialized_options=None,
-  serialized_pb=_b('\n$object_detection/protos/losses.proto\x12\x17object_detection.protos\"\xfe\x05\n\x04Loss\x12\x44\n\x11localization_loss\x18\x01 \x01(\x0b\x32).object_detection.protos.LocalizationLoss\x12H\n\x13\x63lassification_loss\x18\x02 \x01(\x0b\x32+.object_detection.protos.ClassificationLoss\x12\x45\n\x12hard_example_miner\x18\x03 \x01(\x0b\x32).object_detection.protos.HardExampleMiner\x12 \n\x15\x63lassification_weight\x18\x04 \x01(\x02:\x01\x31\x12\x1e\n\x13localization_weight\x18\x05 \x01(\x02:\x01\x31\x12M\n\x16random_example_sampler\x18\x06 \x01(\x0b\x32-.object_detection.protos.RandomExampleSampler\x12I\n\x11\x65qualization_loss\x18\x07 \x01(\x0b\x32..object_detection.protos.Loss.EqualizationLoss\x12V\n\x15\x65xpected_loss_weights\x18\x12 \x01(\x0e\x32\x31.object_detection.protos.Loss.ExpectedLossWeights:\x04NONE\x12#\n\x18min_num_negative_samples\x18\x13 \x01(\x02:\x01\x30\x12*\n\x1f\x64\x65sired_negative_sampling_ratio\x18\x14 \x01(\x02:\x01\x33\x1a?\n\x10\x45qualizationLoss\x12\x11\n\x06weight\x18\x01 \x01(\x02:\x01\x30\x12\x18\n\x10\x65xclude_prefixes\x18\x02 \x03(\t\"Y\n\x13\x45xpectedLossWeights\x12\x08\n\x04NONE\x10\x00\x12\x15\n\x11\x45XPECTED_SAMPLING\x10\x01\x12!\n\x1dREWEIGHTING_UNMATCHED_ANCHORS\x10\x02\"\xb7\x03\n\x10LocalizationLoss\x12J\n\x0bweighted_l2\x18\x01 \x01(\x0b\x32\x33.object_detection.protos.WeightedL2LocalizationLossH\x00\x12W\n\x12weighted_smooth_l1\x18\x02 \x01(\x0b\x32\x39.object_detection.protos.WeightedSmoothL1LocalizationLossH\x00\x12L\n\x0cweighted_iou\x18\x03 \x01(\x0b\x32\x34.object_detection.protos.WeightedIOULocalizationLossH\x00\x12K\n\x14l1_localization_loss\x18\x04 \x01(\x0b\x32+.object_detection.protos.L1LocalizationLossH\x00\x12N\n\rweighted_giou\x18\x05 \x01(\x0b\x32\x35.object_detection.protos.WeightedGIOULocalizationLossH\x00\x42\x13\n\x11localization_loss\">\n\x1aWeightedL2LocalizationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\"V\n WeightedSmoothL1LocalizationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05\x64\x65lta\x18\x02 \x01(\x02:\x01\x31\"\x1d\n\x1bWeightedIOULocalizationLoss\"\x14\n\x12L1LocalizationLoss\"\x1e\n\x1cWeightedGIOULocalizationLoss\"\xd1\x05\n\x12\x43lassificationLoss\x12V\n\x10weighted_sigmoid\x18\x01 \x01(\x0b\x32:.object_detection.protos.WeightedSigmoidClassificationLossH\x00\x12V\n\x10weighted_softmax\x18\x02 \x01(\x0b\x32:.object_detection.protos.WeightedSoftmaxClassificationLossH\x00\x12j\n\x17weighted_logits_softmax\x18\x05 \x01(\x0b\x32G.object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLossH\x00\x12^\n\x14\x62ootstrapped_sigmoid\x18\x03 \x01(\x0b\x32>.object_detection.protos.BootstrappedSigmoidClassificationLossH\x00\x12Y\n\x16weighted_sigmoid_focal\x18\x04 \x01(\x0b\x32\x37.object_detection.protos.SigmoidFocalClassificationLossH\x00\x12g\n#penalty_reduced_logistic_focal_loss\x18\x06 \x01(\x0b\x32\x38.object_detection.protos.PenaltyReducedLogisticFocalLossH\x00\x12\x64\n!weighted_dice_classification_loss\x18\x07 \x01(\x0b\x32\x37.object_detection.protos.WeightedDiceClassificationLossH\x00\x42\x15\n\x13\x63lassification_loss\"E\n!WeightedSigmoidClassificationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\"c\n\x1eSigmoidFocalClassificationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05gamma\x18\x02 \x01(\x02:\x01\x32\x12\r\n\x05\x61lpha\x18\x03 \x01(\x02\"]\n!WeightedSoftmaxClassificationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0blogit_scale\x18\x02 \x01(\x02:\x01\x31\"j\n.WeightedSoftmaxClassificationAgainstLogitsLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0blogit_scale\x18\x02 \x01(\x02:\x01\x31\"w\n%BootstrappedSigmoidClassificationLoss\x12\r\n\x05\x61lpha\x18\x01 \x01(\x02\x12\x1d\n\x0ehard_bootstrap\x18\x02 \x01(\x08:\x05\x66\x61lse\x12 \n\x11\x61nchorwise_output\x18\x03 \x01(\x08:\x05\x66\x61lse\">\n\x1fPenaltyReducedLogisticFocalLoss\x12\r\n\x05\x61lpha\x18\x01 \x01(\x02\x12\x0c\n\x04\x62\x65ta\x18\x02 \x01(\x02\"\xa1\x02\n\x10HardExampleMiner\x12\x1d\n\x11num_hard_examples\x18\x01 \x01(\x05:\x02\x36\x34\x12\x1a\n\riou_threshold\x18\x02 \x01(\x02:\x03\x30.7\x12K\n\tloss_type\x18\x03 \x01(\x0e\x32\x32.object_detection.protos.HardExampleMiner.LossType:\x04\x42OTH\x12%\n\x1amax_negatives_per_positive\x18\x04 \x01(\x05:\x01\x30\x12\"\n\x17min_negatives_per_image\x18\x05 \x01(\x05:\x01\x30\":\n\x08LossType\x12\x08\n\x04\x42OTH\x10\x00\x12\x12\n\x0e\x43LASSIFICATION\x10\x01\x12\x10\n\x0cLOCALIZATION\x10\x02\">\n\x14RandomExampleSampler\x12&\n\x18positive_sample_fraction\x18\x01 \x01(\x02:\x04\x30.01\"p\n\x1eWeightedDiceClassificationLoss\x12$\n\x15squared_normalization\x18\x01 \x01(\x08:\x05\x66\x61lse\x12(\n\x19is_prediction_probability\x18\x02 \x01(\x08:\x05\x66\x61lse')
+  serialized_pb=_b('\n$object_detection/protos/losses.proto\x12\x17object_detection.protos\"\xfe\x05\n\x04Loss\x12\x44\n\x11localization_loss\x18\x01 \x01(\x0b\x32).tfmodels.research.object_detection.protos.LocalizationLoss\x12H\n\x13\x63lassification_loss\x18\x02 \x01(\x0b\x32+.tfmodels.research.object_detection.protos.ClassificationLoss\x12\x45\n\x12hard_example_miner\x18\x03 \x01(\x0b\x32).tfmodels.research.object_detection.protos.HardExampleMiner\x12 \n\x15\x63lassification_weight\x18\x04 \x01(\x02:\x01\x31\x12\x1e\n\x13localization_weight\x18\x05 \x01(\x02:\x01\x31\x12M\n\x16random_example_sampler\x18\x06 \x01(\x0b\x32-.tfmodels.research.object_detection.protos.RandomExampleSampler\x12I\n\x11\x65qualization_loss\x18\x07 \x01(\x0b\x32..tfmodels.research.object_detection.protos.Loss.EqualizationLoss\x12V\n\x15\x65xpected_loss_weights\x18\x12 \x01(\x0e\x32\x31.tfmodels.research.object_detection.protos.Loss.ExpectedLossWeights:\x04NONE\x12#\n\x18min_num_negative_samples\x18\x13 \x01(\x02:\x01\x30\x12*\n\x1f\x64\x65sired_negative_sampling_ratio\x18\x14 \x01(\x02:\x01\x33\x1a?\n\x10\x45qualizationLoss\x12\x11\n\x06weight\x18\x01 \x01(\x02:\x01\x30\x12\x18\n\x10\x65xclude_prefixes\x18\x02 \x03(\t\"Y\n\x13\x45xpectedLossWeights\x12\x08\n\x04NONE\x10\x00\x12\x15\n\x11\x45XPECTED_SAMPLING\x10\x01\x12!\n\x1dREWEIGHTING_UNMATCHED_ANCHORS\x10\x02\"\xb7\x03\n\x10LocalizationLoss\x12J\n\x0bweighted_l2\x18\x01 \x01(\x0b\x32\x33.tfmodels.research.object_detection.protos.WeightedL2LocalizationLossH\x00\x12W\n\x12weighted_smooth_l1\x18\x02 \x01(\x0b\x32\x39.tfmodels.research.object_detection.protos.WeightedSmoothL1LocalizationLossH\x00\x12L\n\x0cweighted_iou\x18\x03 \x01(\x0b\x32\x34.tfmodels.research.object_detection.protos.WeightedIOULocalizationLossH\x00\x12K\n\x14l1_localization_loss\x18\x04 \x01(\x0b\x32+.tfmodels.research.object_detection.protos.L1LocalizationLossH\x00\x12N\n\rweighted_giou\x18\x05 \x01(\x0b\x32\x35.tfmodels.research.object_detection.protos.WeightedGIOULocalizationLossH\x00\x42\x13\n\x11localization_loss\">\n\x1aWeightedL2LocalizationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\"V\n WeightedSmoothL1LocalizationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05\x64\x65lta\x18\x02 \x01(\x02:\x01\x31\"\x1d\n\x1bWeightedIOULocalizationLoss\"\x14\n\x12L1LocalizationLoss\"\x1e\n\x1cWeightedGIOULocalizationLoss\"\xd1\x05\n\x12\x43lassificationLoss\x12V\n\x10weighted_sigmoid\x18\x01 \x01(\x0b\x32:.tfmodels.research.object_detection.protos.WeightedSigmoidClassificationLossH\x00\x12V\n\x10weighted_softmax\x18\x02 \x01(\x0b\x32:.tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationLossH\x00\x12j\n\x17weighted_logits_softmax\x18\x05 \x01(\x0b\x32G.tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLossH\x00\x12^\n\x14\x62ootstrapped_sigmoid\x18\x03 \x01(\x0b\x32>.tfmodels.research.object_detection.protos.BootstrappedSigmoidClassificationLossH\x00\x12Y\n\x16weighted_sigmoid_focal\x18\x04 \x01(\x0b\x32\x37.tfmodels.research.object_detection.protos.SigmoidFocalClassificationLossH\x00\x12g\n#penalty_reduced_logistic_focal_loss\x18\x06 \x01(\x0b\x32\x38.tfmodels.research.object_detection.protos.PenaltyReducedLogisticFocalLossH\x00\x12\x64\n!weighted_dice_classification_loss\x18\x07 \x01(\x0b\x32\x37.tfmodels.research.object_detection.protos.WeightedDiceClassificationLossH\x00\x42\x15\n\x13\x63lassification_loss\"E\n!WeightedSigmoidClassificationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\"c\n\x1eSigmoidFocalClassificationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x10\n\x05gamma\x18\x02 \x01(\x02:\x01\x32\x12\r\n\x05\x61lpha\x18\x03 \x01(\x02\"]\n!WeightedSoftmaxClassificationLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0blogit_scale\x18\x02 \x01(\x02:\x01\x31\"j\n.WeightedSoftmaxClassificationAgainstLogitsLoss\x12 \n\x11\x61nchorwise_output\x18\x01 \x01(\x08:\x05\x66\x61lse\x12\x16\n\x0blogit_scale\x18\x02 \x01(\x02:\x01\x31\"w\n%BootstrappedSigmoidClassificationLoss\x12\r\n\x05\x61lpha\x18\x01 \x01(\x02\x12\x1d\n\x0ehard_bootstrap\x18\x02 \x01(\x08:\x05\x66\x61lse\x12 \n\x11\x61nchorwise_output\x18\x03 \x01(\x08:\x05\x66\x61lse\">\n\x1fPenaltyReducedLogisticFocalLoss\x12\r\n\x05\x61lpha\x18\x01 \x01(\x02\x12\x0c\n\x04\x62\x65ta\x18\x02 \x01(\x02\"\xa1\x02\n\x10HardExampleMiner\x12\x1d\n\x11num_hard_examples\x18\x01 \x01(\x05:\x02\x36\x34\x12\x1a\n\riou_threshold\x18\x02 \x01(\x02:\x03\x30.7\x12K\n\tloss_type\x18\x03 \x01(\x0e\x32\x32.tfmodels.research.object_detection.protos.HardExampleMiner.LossType:\x04\x42OTH\x12%\n\x1amax_negatives_per_positive\x18\x04 \x01(\x05:\x01\x30\x12\"\n\x17min_negatives_per_image\x18\x05 \x01(\x05:\x01\x30\":\n\x08LossType\x12\x08\n\x04\x42OTH\x10\x00\x12\x12\n\x0e\x43LASSIFICATION\x10\x01\x12\x10\n\x0cLOCALIZATION\x10\x02\">\n\x14RandomExampleSampler\x12&\n\x18positive_sample_fraction\x18\x01 \x01(\x02:\x04\x30.01\"p\n\x1eWeightedDiceClassificationLoss\x12$\n\x15squared_normalization\x18\x01 \x01(\x08:\x05\x66\x61lse\x12(\n\x19is_prediction_probability\x18\x02 \x01(\x08:\x05\x66\x61lse')
 )
 
 
 
 _LOSS_EXPECTEDLOSSWEIGHTS = _descriptor.EnumDescriptor(
   name='ExpectedLossWeights',
-  full_name='object_detection.protos.Loss.ExpectedLossWeights',
+  full_name='tfmodels.research.object_detection.protos.Loss.ExpectedLossWeights',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -52,7 +52,7 @@ _sym_db.RegisterEnumDescriptor(_LOSS_EXPECTEDLOSSWEIGHTS)
 
 _HARDEXAMPLEMINER_LOSSTYPE = _descriptor.EnumDescriptor(
   name='LossType',
-  full_name='object_detection.protos.HardExampleMiner.LossType',
+  full_name='tfmodels.research.object_detection.protos.HardExampleMiner.LossType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -79,20 +79,20 @@ _sym_db.RegisterEnumDescriptor(_HARDEXAMPLEMINER_LOSSTYPE)
 
 _LOSS_EQUALIZATIONLOSS = _descriptor.Descriptor(
   name='EqualizationLoss',
-  full_name='object_detection.protos.Loss.EqualizationLoss',
+  full_name='tfmodels.research.object_detection.protos.Loss.EqualizationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='weight', full_name='object_detection.protos.Loss.EqualizationLoss.weight', index=0,
+      name='weight', full_name='tfmodels.research.object_detection.protos.Loss.EqualizationLoss.weight', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='exclude_prefixes', full_name='object_detection.protos.Loss.EqualizationLoss.exclude_prefixes', index=1,
+      name='exclude_prefixes', full_name='tfmodels.research.object_detection.protos.Loss.EqualizationLoss.exclude_prefixes', index=1,
       number=2, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -116,76 +116,76 @@ _LOSS_EQUALIZATIONLOSS = _descriptor.Descriptor(
 
 _LOSS = _descriptor.Descriptor(
   name='Loss',
-  full_name='object_detection.protos.Loss',
+  full_name='tfmodels.research.object_detection.protos.Loss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='localization_loss', full_name='object_detection.protos.Loss.localization_loss', index=0,
+      name='localization_loss', full_name='tfmodels.research.object_detection.protos.Loss.localization_loss', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='classification_loss', full_name='object_detection.protos.Loss.classification_loss', index=1,
+      name='classification_loss', full_name='tfmodels.research.object_detection.protos.Loss.classification_loss', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='hard_example_miner', full_name='object_detection.protos.Loss.hard_example_miner', index=2,
+      name='hard_example_miner', full_name='tfmodels.research.object_detection.protos.Loss.hard_example_miner', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='classification_weight', full_name='object_detection.protos.Loss.classification_weight', index=3,
+      name='classification_weight', full_name='tfmodels.research.object_detection.protos.Loss.classification_weight', index=3,
       number=4, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='localization_weight', full_name='object_detection.protos.Loss.localization_weight', index=4,
+      name='localization_weight', full_name='tfmodels.research.object_detection.protos.Loss.localization_weight', index=4,
       number=5, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='random_example_sampler', full_name='object_detection.protos.Loss.random_example_sampler', index=5,
+      name='random_example_sampler', full_name='tfmodels.research.object_detection.protos.Loss.random_example_sampler', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='equalization_loss', full_name='object_detection.protos.Loss.equalization_loss', index=6,
+      name='equalization_loss', full_name='tfmodels.research.object_detection.protos.Loss.equalization_loss', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='expected_loss_weights', full_name='object_detection.protos.Loss.expected_loss_weights', index=7,
+      name='expected_loss_weights', full_name='tfmodels.research.object_detection.protos.Loss.expected_loss_weights', index=7,
       number=18, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='min_num_negative_samples', full_name='object_detection.protos.Loss.min_num_negative_samples', index=8,
+      name='min_num_negative_samples', full_name='tfmodels.research.object_detection.protos.Loss.min_num_negative_samples', index=8,
       number=19, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='desired_negative_sampling_ratio', full_name='object_detection.protos.Loss.desired_negative_sampling_ratio', index=9,
+      name='desired_negative_sampling_ratio', full_name='tfmodels.research.object_detection.protos.Loss.desired_negative_sampling_ratio', index=9,
       number=20, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(3),
       message_type=None, enum_type=None, containing_type=None,
@@ -211,41 +211,41 @@ _LOSS = _descriptor.Descriptor(
 
 _LOCALIZATIONLOSS = _descriptor.Descriptor(
   name='LocalizationLoss',
-  full_name='object_detection.protos.LocalizationLoss',
+  full_name='tfmodels.research.object_detection.protos.LocalizationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='weighted_l2', full_name='object_detection.protos.LocalizationLoss.weighted_l2', index=0,
+      name='weighted_l2', full_name='tfmodels.research.object_detection.protos.LocalizationLoss.weighted_l2', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='weighted_smooth_l1', full_name='object_detection.protos.LocalizationLoss.weighted_smooth_l1', index=1,
+      name='weighted_smooth_l1', full_name='tfmodels.research.object_detection.protos.LocalizationLoss.weighted_smooth_l1', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='weighted_iou', full_name='object_detection.protos.LocalizationLoss.weighted_iou', index=2,
+      name='weighted_iou', full_name='tfmodels.research.object_detection.protos.LocalizationLoss.weighted_iou', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='l1_localization_loss', full_name='object_detection.protos.LocalizationLoss.l1_localization_loss', index=3,
+      name='l1_localization_loss', full_name='tfmodels.research.object_detection.protos.LocalizationLoss.l1_localization_loss', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='weighted_giou', full_name='object_detection.protos.LocalizationLoss.weighted_giou', index=4,
+      name='weighted_giou', full_name='tfmodels.research.object_detection.protos.LocalizationLoss.weighted_giou', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -263,7 +263,7 @@ _LOCALIZATIONLOSS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='localization_loss', full_name='object_detection.protos.LocalizationLoss.localization_loss',
+      name='localization_loss', full_name='tfmodels.research.object_detection.protos.LocalizationLoss.localization_loss',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=835,
@@ -273,13 +273,13 @@ _LOCALIZATIONLOSS = _descriptor.Descriptor(
 
 _WEIGHTEDL2LOCALIZATIONLOSS = _descriptor.Descriptor(
   name='WeightedL2LocalizationLoss',
-  full_name='object_detection.protos.WeightedL2LocalizationLoss',
+  full_name='tfmodels.research.object_detection.protos.WeightedL2LocalizationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='anchorwise_output', full_name='object_detection.protos.WeightedL2LocalizationLoss.anchorwise_output', index=0,
+      name='anchorwise_output', full_name='tfmodels.research.object_detection.protos.WeightedL2LocalizationLoss.anchorwise_output', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -304,20 +304,20 @@ _WEIGHTEDL2LOCALIZATIONLOSS = _descriptor.Descriptor(
 
 _WEIGHTEDSMOOTHL1LOCALIZATIONLOSS = _descriptor.Descriptor(
   name='WeightedSmoothL1LocalizationLoss',
-  full_name='object_detection.protos.WeightedSmoothL1LocalizationLoss',
+  full_name='tfmodels.research.object_detection.protos.WeightedSmoothL1LocalizationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='anchorwise_output', full_name='object_detection.protos.WeightedSmoothL1LocalizationLoss.anchorwise_output', index=0,
+      name='anchorwise_output', full_name='tfmodels.research.object_detection.protos.WeightedSmoothL1LocalizationLoss.anchorwise_output', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='delta', full_name='object_detection.protos.WeightedSmoothL1LocalizationLoss.delta', index=1,
+      name='delta', full_name='tfmodels.research.object_detection.protos.WeightedSmoothL1LocalizationLoss.delta', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
@@ -342,7 +342,7 @@ _WEIGHTEDSMOOTHL1LOCALIZATIONLOSS = _descriptor.Descriptor(
 
 _WEIGHTEDIOULOCALIZATIONLOSS = _descriptor.Descriptor(
   name='WeightedIOULocalizationLoss',
-  full_name='object_detection.protos.WeightedIOULocalizationLoss',
+  full_name='tfmodels.research.object_detection.protos.WeightedIOULocalizationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -366,7 +366,7 @@ _WEIGHTEDIOULOCALIZATIONLOSS = _descriptor.Descriptor(
 
 _L1LOCALIZATIONLOSS = _descriptor.Descriptor(
   name='L1LocalizationLoss',
-  full_name='object_detection.protos.L1LocalizationLoss',
+  full_name='tfmodels.research.object_detection.protos.L1LocalizationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -390,7 +390,7 @@ _L1LOCALIZATIONLOSS = _descriptor.Descriptor(
 
 _WEIGHTEDGIOULOCALIZATIONLOSS = _descriptor.Descriptor(
   name='WeightedGIOULocalizationLoss',
-  full_name='object_detection.protos.WeightedGIOULocalizationLoss',
+  full_name='tfmodels.research.object_detection.protos.WeightedGIOULocalizationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -414,55 +414,55 @@ _WEIGHTEDGIOULOCALIZATIONLOSS = _descriptor.Descriptor(
 
 _CLASSIFICATIONLOSS = _descriptor.Descriptor(
   name='ClassificationLoss',
-  full_name='object_detection.protos.ClassificationLoss',
+  full_name='tfmodels.research.object_detection.protos.ClassificationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='weighted_sigmoid', full_name='object_detection.protos.ClassificationLoss.weighted_sigmoid', index=0,
+      name='weighted_sigmoid', full_name='tfmodels.research.object_detection.protos.ClassificationLoss.weighted_sigmoid', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='weighted_softmax', full_name='object_detection.protos.ClassificationLoss.weighted_softmax', index=1,
+      name='weighted_softmax', full_name='tfmodels.research.object_detection.protos.ClassificationLoss.weighted_softmax', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='weighted_logits_softmax', full_name='object_detection.protos.ClassificationLoss.weighted_logits_softmax', index=2,
+      name='weighted_logits_softmax', full_name='tfmodels.research.object_detection.protos.ClassificationLoss.weighted_logits_softmax', index=2,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='bootstrapped_sigmoid', full_name='object_detection.protos.ClassificationLoss.bootstrapped_sigmoid', index=3,
+      name='bootstrapped_sigmoid', full_name='tfmodels.research.object_detection.protos.ClassificationLoss.bootstrapped_sigmoid', index=3,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='weighted_sigmoid_focal', full_name='object_detection.protos.ClassificationLoss.weighted_sigmoid_focal', index=4,
+      name='weighted_sigmoid_focal', full_name='tfmodels.research.object_detection.protos.ClassificationLoss.weighted_sigmoid_focal', index=4,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='penalty_reduced_logistic_focal_loss', full_name='object_detection.protos.ClassificationLoss.penalty_reduced_logistic_focal_loss', index=5,
+      name='penalty_reduced_logistic_focal_loss', full_name='tfmodels.research.object_detection.protos.ClassificationLoss.penalty_reduced_logistic_focal_loss', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='weighted_dice_classification_loss', full_name='object_detection.protos.ClassificationLoss.weighted_dice_classification_loss', index=6,
+      name='weighted_dice_classification_loss', full_name='tfmodels.research.object_detection.protos.ClassificationLoss.weighted_dice_classification_loss', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -480,7 +480,7 @@ _CLASSIFICATIONLOSS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='classification_loss', full_name='object_detection.protos.ClassificationLoss.classification_loss',
+      name='classification_loss', full_name='tfmodels.research.object_detection.protos.ClassificationLoss.classification_loss',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=1514,
@@ -490,13 +490,13 @@ _CLASSIFICATIONLOSS = _descriptor.Descriptor(
 
 _WEIGHTEDSIGMOIDCLASSIFICATIONLOSS = _descriptor.Descriptor(
   name='WeightedSigmoidClassificationLoss',
-  full_name='object_detection.protos.WeightedSigmoidClassificationLoss',
+  full_name='tfmodels.research.object_detection.protos.WeightedSigmoidClassificationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='anchorwise_output', full_name='object_detection.protos.WeightedSigmoidClassificationLoss.anchorwise_output', index=0,
+      name='anchorwise_output', full_name='tfmodels.research.object_detection.protos.WeightedSigmoidClassificationLoss.anchorwise_output', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -521,27 +521,27 @@ _WEIGHTEDSIGMOIDCLASSIFICATIONLOSS = _descriptor.Descriptor(
 
 _SIGMOIDFOCALCLASSIFICATIONLOSS = _descriptor.Descriptor(
   name='SigmoidFocalClassificationLoss',
-  full_name='object_detection.protos.SigmoidFocalClassificationLoss',
+  full_name='tfmodels.research.object_detection.protos.SigmoidFocalClassificationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='anchorwise_output', full_name='object_detection.protos.SigmoidFocalClassificationLoss.anchorwise_output', index=0,
+      name='anchorwise_output', full_name='tfmodels.research.object_detection.protos.SigmoidFocalClassificationLoss.anchorwise_output', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='gamma', full_name='object_detection.protos.SigmoidFocalClassificationLoss.gamma', index=1,
+      name='gamma', full_name='tfmodels.research.object_detection.protos.SigmoidFocalClassificationLoss.gamma', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(2),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='alpha', full_name='object_detection.protos.SigmoidFocalClassificationLoss.alpha', index=2,
+      name='alpha', full_name='tfmodels.research.object_detection.protos.SigmoidFocalClassificationLoss.alpha', index=2,
       number=3, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -566,20 +566,20 @@ _SIGMOIDFOCALCLASSIFICATIONLOSS = _descriptor.Descriptor(
 
 _WEIGHTEDSOFTMAXCLASSIFICATIONLOSS = _descriptor.Descriptor(
   name='WeightedSoftmaxClassificationLoss',
-  full_name='object_detection.protos.WeightedSoftmaxClassificationLoss',
+  full_name='tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='anchorwise_output', full_name='object_detection.protos.WeightedSoftmaxClassificationLoss.anchorwise_output', index=0,
+      name='anchorwise_output', full_name='tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationLoss.anchorwise_output', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='logit_scale', full_name='object_detection.protos.WeightedSoftmaxClassificationLoss.logit_scale', index=1,
+      name='logit_scale', full_name='tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationLoss.logit_scale', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
@@ -604,20 +604,20 @@ _WEIGHTEDSOFTMAXCLASSIFICATIONLOSS = _descriptor.Descriptor(
 
 _WEIGHTEDSOFTMAXCLASSIFICATIONAGAINSTLOGITSLOSS = _descriptor.Descriptor(
   name='WeightedSoftmaxClassificationAgainstLogitsLoss',
-  full_name='object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLoss',
+  full_name='tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='anchorwise_output', full_name='object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLoss.anchorwise_output', index=0,
+      name='anchorwise_output', full_name='tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLoss.anchorwise_output', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='logit_scale', full_name='object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLoss.logit_scale', index=1,
+      name='logit_scale', full_name='tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLoss.logit_scale', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(1),
       message_type=None, enum_type=None, containing_type=None,
@@ -642,27 +642,27 @@ _WEIGHTEDSOFTMAXCLASSIFICATIONAGAINSTLOGITSLOSS = _descriptor.Descriptor(
 
 _BOOTSTRAPPEDSIGMOIDCLASSIFICATIONLOSS = _descriptor.Descriptor(
   name='BootstrappedSigmoidClassificationLoss',
-  full_name='object_detection.protos.BootstrappedSigmoidClassificationLoss',
+  full_name='tfmodels.research.object_detection.protos.BootstrappedSigmoidClassificationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='alpha', full_name='object_detection.protos.BootstrappedSigmoidClassificationLoss.alpha', index=0,
+      name='alpha', full_name='tfmodels.research.object_detection.protos.BootstrappedSigmoidClassificationLoss.alpha', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='hard_bootstrap', full_name='object_detection.protos.BootstrappedSigmoidClassificationLoss.hard_bootstrap', index=1,
+      name='hard_bootstrap', full_name='tfmodels.research.object_detection.protos.BootstrappedSigmoidClassificationLoss.hard_bootstrap', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='anchorwise_output', full_name='object_detection.protos.BootstrappedSigmoidClassificationLoss.anchorwise_output', index=2,
+      name='anchorwise_output', full_name='tfmodels.research.object_detection.protos.BootstrappedSigmoidClassificationLoss.anchorwise_output', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -687,20 +687,20 @@ _BOOTSTRAPPEDSIGMOIDCLASSIFICATIONLOSS = _descriptor.Descriptor(
 
 _PENALTYREDUCEDLOGISTICFOCALLOSS = _descriptor.Descriptor(
   name='PenaltyReducedLogisticFocalLoss',
-  full_name='object_detection.protos.PenaltyReducedLogisticFocalLoss',
+  full_name='tfmodels.research.object_detection.protos.PenaltyReducedLogisticFocalLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='alpha', full_name='object_detection.protos.PenaltyReducedLogisticFocalLoss.alpha', index=0,
+      name='alpha', full_name='tfmodels.research.object_detection.protos.PenaltyReducedLogisticFocalLoss.alpha', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='beta', full_name='object_detection.protos.PenaltyReducedLogisticFocalLoss.beta', index=1,
+      name='beta', full_name='tfmodels.research.object_detection.protos.PenaltyReducedLogisticFocalLoss.beta', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -725,41 +725,41 @@ _PENALTYREDUCEDLOGISTICFOCALLOSS = _descriptor.Descriptor(
 
 _HARDEXAMPLEMINER = _descriptor.Descriptor(
   name='HardExampleMiner',
-  full_name='object_detection.protos.HardExampleMiner',
+  full_name='tfmodels.research.object_detection.protos.HardExampleMiner',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='num_hard_examples', full_name='object_detection.protos.HardExampleMiner.num_hard_examples', index=0,
+      name='num_hard_examples', full_name='tfmodels.research.object_detection.protos.HardExampleMiner.num_hard_examples', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=64,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='iou_threshold', full_name='object_detection.protos.HardExampleMiner.iou_threshold', index=1,
+      name='iou_threshold', full_name='tfmodels.research.object_detection.protos.HardExampleMiner.iou_threshold', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0.7),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='loss_type', full_name='object_detection.protos.HardExampleMiner.loss_type', index=2,
+      name='loss_type', full_name='tfmodels.research.object_detection.protos.HardExampleMiner.loss_type', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='max_negatives_per_positive', full_name='object_detection.protos.HardExampleMiner.max_negatives_per_positive', index=3,
+      name='max_negatives_per_positive', full_name='tfmodels.research.object_detection.protos.HardExampleMiner.max_negatives_per_positive', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='min_negatives_per_image', full_name='object_detection.protos.HardExampleMiner.min_negatives_per_image', index=4,
+      name='min_negatives_per_image', full_name='tfmodels.research.object_detection.protos.HardExampleMiner.min_negatives_per_image', index=4,
       number=5, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -785,13 +785,13 @@ _HARDEXAMPLEMINER = _descriptor.Descriptor(
 
 _RANDOMEXAMPLESAMPLER = _descriptor.Descriptor(
   name='RandomExampleSampler',
-  full_name='object_detection.protos.RandomExampleSampler',
+  full_name='tfmodels.research.object_detection.protos.RandomExampleSampler',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='positive_sample_fraction', full_name='object_detection.protos.RandomExampleSampler.positive_sample_fraction', index=0,
+      name='positive_sample_fraction', full_name='tfmodels.research.object_detection.protos.RandomExampleSampler.positive_sample_fraction', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0.01),
       message_type=None, enum_type=None, containing_type=None,
@@ -816,20 +816,20 @@ _RANDOMEXAMPLESAMPLER = _descriptor.Descriptor(
 
 _WEIGHTEDDICECLASSIFICATIONLOSS = _descriptor.Descriptor(
   name='WeightedDiceClassificationLoss',
-  full_name='object_detection.protos.WeightedDiceClassificationLoss',
+  full_name='tfmodels.research.object_detection.protos.WeightedDiceClassificationLoss',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='squared_normalization', full_name='object_detection.protos.WeightedDiceClassificationLoss.squared_normalization', index=0,
+      name='squared_normalization', full_name='tfmodels.research.object_detection.protos.WeightedDiceClassificationLoss.squared_normalization', index=0,
       number=1, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='is_prediction_probability', full_name='object_detection.protos.WeightedDiceClassificationLoss.is_prediction_probability', index=1,
+      name='is_prediction_probability', full_name='tfmodels.research.object_detection.protos.WeightedDiceClassificationLoss.is_prediction_probability', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=True, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -932,126 +932,126 @@ Loss = _reflection.GeneratedProtocolMessageType('Loss', (_message.Message,), dic
 
   EqualizationLoss = _reflection.GeneratedProtocolMessageType('EqualizationLoss', (_message.Message,), dict(
     DESCRIPTOR = _LOSS_EQUALIZATIONLOSS,
-    __module__ = 'object_detection.protos.losses_pb2'
-    # @@protoc_insertion_point(class_scope:object_detection.protos.Loss.EqualizationLoss)
+    __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+    # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.Loss.EqualizationLoss)
     ))
   ,
   DESCRIPTOR = _LOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.Loss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.Loss)
   ))
 _sym_db.RegisterMessage(Loss)
 _sym_db.RegisterMessage(Loss.EqualizationLoss)
 
 LocalizationLoss = _reflection.GeneratedProtocolMessageType('LocalizationLoss', (_message.Message,), dict(
   DESCRIPTOR = _LOCALIZATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.LocalizationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.LocalizationLoss)
   ))
 _sym_db.RegisterMessage(LocalizationLoss)
 
 WeightedL2LocalizationLoss = _reflection.GeneratedProtocolMessageType('WeightedL2LocalizationLoss', (_message.Message,), dict(
   DESCRIPTOR = _WEIGHTEDL2LOCALIZATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.WeightedL2LocalizationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.WeightedL2LocalizationLoss)
   ))
 _sym_db.RegisterMessage(WeightedL2LocalizationLoss)
 
 WeightedSmoothL1LocalizationLoss = _reflection.GeneratedProtocolMessageType('WeightedSmoothL1LocalizationLoss', (_message.Message,), dict(
   DESCRIPTOR = _WEIGHTEDSMOOTHL1LOCALIZATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.WeightedSmoothL1LocalizationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.WeightedSmoothL1LocalizationLoss)
   ))
 _sym_db.RegisterMessage(WeightedSmoothL1LocalizationLoss)
 
 WeightedIOULocalizationLoss = _reflection.GeneratedProtocolMessageType('WeightedIOULocalizationLoss', (_message.Message,), dict(
   DESCRIPTOR = _WEIGHTEDIOULOCALIZATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.WeightedIOULocalizationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.WeightedIOULocalizationLoss)
   ))
 _sym_db.RegisterMessage(WeightedIOULocalizationLoss)
 
 L1LocalizationLoss = _reflection.GeneratedProtocolMessageType('L1LocalizationLoss', (_message.Message,), dict(
   DESCRIPTOR = _L1LOCALIZATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.L1LocalizationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.L1LocalizationLoss)
   ))
 _sym_db.RegisterMessage(L1LocalizationLoss)
 
 WeightedGIOULocalizationLoss = _reflection.GeneratedProtocolMessageType('WeightedGIOULocalizationLoss', (_message.Message,), dict(
   DESCRIPTOR = _WEIGHTEDGIOULOCALIZATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.WeightedGIOULocalizationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.WeightedGIOULocalizationLoss)
   ))
 _sym_db.RegisterMessage(WeightedGIOULocalizationLoss)
 
 ClassificationLoss = _reflection.GeneratedProtocolMessageType('ClassificationLoss', (_message.Message,), dict(
   DESCRIPTOR = _CLASSIFICATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.ClassificationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.ClassificationLoss)
   ))
 _sym_db.RegisterMessage(ClassificationLoss)
 
 WeightedSigmoidClassificationLoss = _reflection.GeneratedProtocolMessageType('WeightedSigmoidClassificationLoss', (_message.Message,), dict(
   DESCRIPTOR = _WEIGHTEDSIGMOIDCLASSIFICATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.WeightedSigmoidClassificationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.WeightedSigmoidClassificationLoss)
   ))
 _sym_db.RegisterMessage(WeightedSigmoidClassificationLoss)
 
 SigmoidFocalClassificationLoss = _reflection.GeneratedProtocolMessageType('SigmoidFocalClassificationLoss', (_message.Message,), dict(
   DESCRIPTOR = _SIGMOIDFOCALCLASSIFICATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.SigmoidFocalClassificationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.SigmoidFocalClassificationLoss)
   ))
 _sym_db.RegisterMessage(SigmoidFocalClassificationLoss)
 
 WeightedSoftmaxClassificationLoss = _reflection.GeneratedProtocolMessageType('WeightedSoftmaxClassificationLoss', (_message.Message,), dict(
   DESCRIPTOR = _WEIGHTEDSOFTMAXCLASSIFICATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.WeightedSoftmaxClassificationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationLoss)
   ))
 _sym_db.RegisterMessage(WeightedSoftmaxClassificationLoss)
 
 WeightedSoftmaxClassificationAgainstLogitsLoss = _reflection.GeneratedProtocolMessageType('WeightedSoftmaxClassificationAgainstLogitsLoss', (_message.Message,), dict(
   DESCRIPTOR = _WEIGHTEDSOFTMAXCLASSIFICATIONAGAINSTLOGITSLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.WeightedSoftmaxClassificationAgainstLogitsLoss)
   ))
 _sym_db.RegisterMessage(WeightedSoftmaxClassificationAgainstLogitsLoss)
 
 BootstrappedSigmoidClassificationLoss = _reflection.GeneratedProtocolMessageType('BootstrappedSigmoidClassificationLoss', (_message.Message,), dict(
   DESCRIPTOR = _BOOTSTRAPPEDSIGMOIDCLASSIFICATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.BootstrappedSigmoidClassificationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.BootstrappedSigmoidClassificationLoss)
   ))
 _sym_db.RegisterMessage(BootstrappedSigmoidClassificationLoss)
 
 PenaltyReducedLogisticFocalLoss = _reflection.GeneratedProtocolMessageType('PenaltyReducedLogisticFocalLoss', (_message.Message,), dict(
   DESCRIPTOR = _PENALTYREDUCEDLOGISTICFOCALLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.PenaltyReducedLogisticFocalLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.PenaltyReducedLogisticFocalLoss)
   ))
 _sym_db.RegisterMessage(PenaltyReducedLogisticFocalLoss)
 
 HardExampleMiner = _reflection.GeneratedProtocolMessageType('HardExampleMiner', (_message.Message,), dict(
   DESCRIPTOR = _HARDEXAMPLEMINER,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.HardExampleMiner)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.HardExampleMiner)
   ))
 _sym_db.RegisterMessage(HardExampleMiner)
 
 RandomExampleSampler = _reflection.GeneratedProtocolMessageType('RandomExampleSampler', (_message.Message,), dict(
   DESCRIPTOR = _RANDOMEXAMPLESAMPLER,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.RandomExampleSampler)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.RandomExampleSampler)
   ))
 _sym_db.RegisterMessage(RandomExampleSampler)
 
 WeightedDiceClassificationLoss = _reflection.GeneratedProtocolMessageType('WeightedDiceClassificationLoss', (_message.Message,), dict(
   DESCRIPTOR = _WEIGHTEDDICECLASSIFICATIONLOSS,
-  __module__ = 'object_detection.protos.losses_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.WeightedDiceClassificationLoss)
+  __module__ = 'tfmodels.research.object_detection.protos.losses_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.WeightedDiceClassificationLoss)
   ))
 _sym_db.RegisterMessage(WeightedDiceClassificationLoss)
 

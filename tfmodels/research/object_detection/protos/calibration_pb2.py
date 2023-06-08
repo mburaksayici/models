@@ -17,15 +17,15 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='object_detection/protos/calibration.proto',
-  package='object_detection.protos',
+  package='tfmodels.research.object_detection.protos',
   syntax='proto2',
   serialized_options=None,
-  serialized_pb=_b('\n)object_detection/protos/calibration.proto\x12\x17object_detection.protos\"\xe4\x03\n\x11\x43\x61librationConfig\x12P\n\x16\x66unction_approximation\x18\x01 \x01(\x0b\x32..object_detection.protos.FunctionApproximationH\x00\x12\x62\n class_id_function_approximations\x18\x02 \x01(\x0b\x32\x36.object_detection.protos.ClassIdFunctionApproximationsH\x00\x12J\n\x13sigmoid_calibration\x18\x03 \x01(\x0b\x32+.object_detection.protos.SigmoidCalibrationH\x00\x12\\\n\x1d\x63lass_id_sigmoid_calibrations\x18\x04 \x01(\x0b\x32\x33.object_detection.protos.ClassIdSigmoidCalibrationsH\x00\x12\x61\n\x1ftemperature_scaling_calibration\x18\x05 \x01(\x0b\x32\x36.object_detection.protos.TemperatureScalingCalibrationH\x00\x42\x0c\n\ncalibrator\"L\n\x15\x46unctionApproximation\x12\x33\n\tx_y_pairs\x18\x01 \x01(\x0b\x32 .object_detection.protos.XYPairs\"\xe9\x01\n\x1d\x43lassIdFunctionApproximations\x12l\n\x15\x63lass_id_xy_pairs_map\x18\x01 \x03(\x0b\x32M.object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry\x1aZ\n\x16\x43lassIdXyPairsMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12/\n\x05value\x18\x02 \x01(\x0b\x32 .object_detection.protos.XYPairs:\x02\x38\x01\"\\\n\x12SigmoidCalibration\x12\x46\n\x12sigmoid_parameters\x18\x01 \x01(\x0b\x32*.object_detection.protos.SigmoidParameters\"\x8b\x02\n\x1a\x43lassIdSigmoidCalibrations\x12}\n\x1f\x63lass_id_sigmoid_parameters_map\x18\x01 \x03(\x0b\x32T.object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry\x1an\n ClassIdSigmoidParametersMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x39\n\x05value\x18\x02 \x01(\x0b\x32*.object_detection.protos.SigmoidParameters:\x02\x38\x01\"/\n\x1dTemperatureScalingCalibration\x12\x0e\n\x06scaler\x18\x01 \x01(\x02\"\xab\x01\n\x07XYPairs\x12\x39\n\x08x_y_pair\x18\x01 \x03(\x0b\x32\'.object_detection.protos.XYPairs.XYPair\x12\x45\n\x12training_data_type\x18\x02 \x01(\x0e\x32).object_detection.protos.TrainingDataType\x1a\x1e\n\x06XYPair\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\"0\n\x11SigmoidParameters\x12\r\n\x01\x61\x18\x01 \x01(\x02:\x02-1\x12\x0c\n\x01\x62\x18\x02 \x01(\x02:\x01\x30*N\n\x10TrainingDataType\x12\x15\n\x11\x44\x41TA_TYPE_UNKNOWN\x10\x00\x12\x0f\n\x0b\x41LL_CLASSES\x10\x01\x12\x12\n\x0e\x43LASS_SPECIFIC\x10\x02')
+  serialized_pb=_b('\n)object_detection/protos/calibration.proto\x12\x17object_detection.protos\"\xe4\x03\n\x11\x43\x61librationConfig\x12P\n\x16\x66unction_approximation\x18\x01 \x01(\x0b\x32..tfmodels.research.object_detection.protos.FunctionApproximationH\x00\x12\x62\n class_id_function_approximations\x18\x02 \x01(\x0b\x32\x36.tfmodels.research.object_detection.protos.ClassIdFunctionApproximationsH\x00\x12J\n\x13sigmoid_calibration\x18\x03 \x01(\x0b\x32+.tfmodels.research.object_detection.protos.SigmoidCalibrationH\x00\x12\\\n\x1d\x63lass_id_sigmoid_calibrations\x18\x04 \x01(\x0b\x32\x33.tfmodels.research.object_detection.protos.ClassIdSigmoidCalibrationsH\x00\x12\x61\n\x1ftemperature_scaling_calibration\x18\x05 \x01(\x0b\x32\x36.tfmodels.research.object_detection.protos.TemperatureScalingCalibrationH\x00\x42\x0c\n\ncalibrator\"L\n\x15\x46unctionApproximation\x12\x33\n\tx_y_pairs\x18\x01 \x01(\x0b\x32 .tfmodels.research.object_detection.protos.XYPairs\"\xe9\x01\n\x1d\x43lassIdFunctionApproximations\x12l\n\x15\x63lass_id_xy_pairs_map\x18\x01 \x03(\x0b\x32M.tfmodels.research.object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry\x1aZ\n\x16\x43lassIdXyPairsMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12/\n\x05value\x18\x02 \x01(\x0b\x32 .tfmodels.research.object_detection.protos.XYPairs:\x02\x38\x01\"\\\n\x12SigmoidCalibration\x12\x46\n\x12sigmoid_parameters\x18\x01 \x01(\x0b\x32*.tfmodels.research.object_detection.protos.SigmoidParameters\"\x8b\x02\n\x1a\x43lassIdSigmoidCalibrations\x12}\n\x1f\x63lass_id_sigmoid_parameters_map\x18\x01 \x03(\x0b\x32T.tfmodels.research.object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry\x1an\n ClassIdSigmoidParametersMapEntry\x12\x0b\n\x03key\x18\x01 \x01(\x05\x12\x39\n\x05value\x18\x02 \x01(\x0b\x32*.tfmodels.research.object_detection.protos.SigmoidParameters:\x02\x38\x01\"/\n\x1dTemperatureScalingCalibration\x12\x0e\n\x06scaler\x18\x01 \x01(\x02\"\xab\x01\n\x07XYPairs\x12\x39\n\x08x_y_pair\x18\x01 \x03(\x0b\x32\'.tfmodels.research.object_detection.protos.XYPairs.XYPair\x12\x45\n\x12training_data_type\x18\x02 \x01(\x0e\x32).tfmodels.research.object_detection.protos.TrainingDataType\x1a\x1e\n\x06XYPair\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\"0\n\x11SigmoidParameters\x12\r\n\x01\x61\x18\x01 \x01(\x02:\x02-1\x12\x0c\n\x01\x62\x18\x02 \x01(\x02:\x01\x30*N\n\x10TrainingDataType\x12\x15\n\x11\x44\x41TA_TYPE_UNKNOWN\x10\x00\x12\x0f\n\x0b\x41LL_CLASSES\x10\x01\x12\x12\n\x0e\x43LASS_SPECIFIC\x10\x02')
 )
 
 _TRAININGDATATYPE = _descriptor.EnumDescriptor(
   name='TrainingDataType',
-  full_name='object_detection.protos.TrainingDataType',
+  full_name='tfmodels.research.object_detection.protos.TrainingDataType',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -58,41 +58,41 @@ CLASS_SPECIFIC = 2
 
 _CALIBRATIONCONFIG = _descriptor.Descriptor(
   name='CalibrationConfig',
-  full_name='object_detection.protos.CalibrationConfig',
+  full_name='tfmodels.research.object_detection.protos.CalibrationConfig',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='function_approximation', full_name='object_detection.protos.CalibrationConfig.function_approximation', index=0,
+      name='function_approximation', full_name='tfmodels.research.object_detection.protos.CalibrationConfig.function_approximation', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='class_id_function_approximations', full_name='object_detection.protos.CalibrationConfig.class_id_function_approximations', index=1,
+      name='class_id_function_approximations', full_name='tfmodels.research.object_detection.protos.CalibrationConfig.class_id_function_approximations', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='sigmoid_calibration', full_name='object_detection.protos.CalibrationConfig.sigmoid_calibration', index=2,
+      name='sigmoid_calibration', full_name='tfmodels.research.object_detection.protos.CalibrationConfig.sigmoid_calibration', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='class_id_sigmoid_calibrations', full_name='object_detection.protos.CalibrationConfig.class_id_sigmoid_calibrations', index=3,
+      name='class_id_sigmoid_calibrations', full_name='tfmodels.research.object_detection.protos.CalibrationConfig.class_id_sigmoid_calibrations', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='temperature_scaling_calibration', full_name='object_detection.protos.CalibrationConfig.temperature_scaling_calibration', index=4,
+      name='temperature_scaling_calibration', full_name='tfmodels.research.object_detection.protos.CalibrationConfig.temperature_scaling_calibration', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -110,7 +110,7 @@ _CALIBRATIONCONFIG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='calibrator', full_name='object_detection.protos.CalibrationConfig.calibrator',
+      name='calibrator', full_name='tfmodels.research.object_detection.protos.CalibrationConfig.calibrator',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=71,
@@ -120,13 +120,13 @@ _CALIBRATIONCONFIG = _descriptor.Descriptor(
 
 _FUNCTIONAPPROXIMATION = _descriptor.Descriptor(
   name='FunctionApproximation',
-  full_name='object_detection.protos.FunctionApproximation',
+  full_name='tfmodels.research.object_detection.protos.FunctionApproximation',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x_y_pairs', full_name='object_detection.protos.FunctionApproximation.x_y_pairs', index=0,
+      name='x_y_pairs', full_name='tfmodels.research.object_detection.protos.FunctionApproximation.x_y_pairs', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -151,20 +151,20 @@ _FUNCTIONAPPROXIMATION = _descriptor.Descriptor(
 
 _CLASSIDFUNCTIONAPPROXIMATIONS_CLASSIDXYPAIRSMAPENTRY = _descriptor.Descriptor(
   name='ClassIdXyPairsMapEntry',
-  full_name='object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry',
+  full_name='tfmodels.research.object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='key', full_name='object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry.key', index=0,
+      name='key', full_name='tfmodels.research.object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry.key', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='value', full_name='object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry.value', index=1,
+      name='value', full_name='tfmodels.research.object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry.value', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -188,13 +188,13 @@ _CLASSIDFUNCTIONAPPROXIMATIONS_CLASSIDXYPAIRSMAPENTRY = _descriptor.Descriptor(
 
 _CLASSIDFUNCTIONAPPROXIMATIONS = _descriptor.Descriptor(
   name='ClassIdFunctionApproximations',
-  full_name='object_detection.protos.ClassIdFunctionApproximations',
+  full_name='tfmodels.research.object_detection.protos.ClassIdFunctionApproximations',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='class_id_xy_pairs_map', full_name='object_detection.protos.ClassIdFunctionApproximations.class_id_xy_pairs_map', index=0,
+      name='class_id_xy_pairs_map', full_name='tfmodels.research.object_detection.protos.ClassIdFunctionApproximations.class_id_xy_pairs_map', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -219,13 +219,13 @@ _CLASSIDFUNCTIONAPPROXIMATIONS = _descriptor.Descriptor(
 
 _SIGMOIDCALIBRATION = _descriptor.Descriptor(
   name='SigmoidCalibration',
-  full_name='object_detection.protos.SigmoidCalibration',
+  full_name='tfmodels.research.object_detection.protos.SigmoidCalibration',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='sigmoid_parameters', full_name='object_detection.protos.SigmoidCalibration.sigmoid_parameters', index=0,
+      name='sigmoid_parameters', full_name='tfmodels.research.object_detection.protos.SigmoidCalibration.sigmoid_parameters', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -250,20 +250,20 @@ _SIGMOIDCALIBRATION = _descriptor.Descriptor(
 
 _CLASSIDSIGMOIDCALIBRATIONS_CLASSIDSIGMOIDPARAMETERSMAPENTRY = _descriptor.Descriptor(
   name='ClassIdSigmoidParametersMapEntry',
-  full_name='object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry',
+  full_name='tfmodels.research.object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='key', full_name='object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry.key', index=0,
+      name='key', full_name='tfmodels.research.object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry.key', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='value', full_name='object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry.value', index=1,
+      name='value', full_name='tfmodels.research.object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry.value', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -287,13 +287,13 @@ _CLASSIDSIGMOIDCALIBRATIONS_CLASSIDSIGMOIDPARAMETERSMAPENTRY = _descriptor.Descr
 
 _CLASSIDSIGMOIDCALIBRATIONS = _descriptor.Descriptor(
   name='ClassIdSigmoidCalibrations',
-  full_name='object_detection.protos.ClassIdSigmoidCalibrations',
+  full_name='tfmodels.research.object_detection.protos.ClassIdSigmoidCalibrations',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='class_id_sigmoid_parameters_map', full_name='object_detection.protos.ClassIdSigmoidCalibrations.class_id_sigmoid_parameters_map', index=0,
+      name='class_id_sigmoid_parameters_map', full_name='tfmodels.research.object_detection.protos.ClassIdSigmoidCalibrations.class_id_sigmoid_parameters_map', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -318,13 +318,13 @@ _CLASSIDSIGMOIDCALIBRATIONS = _descriptor.Descriptor(
 
 _TEMPERATURESCALINGCALIBRATION = _descriptor.Descriptor(
   name='TemperatureScalingCalibration',
-  full_name='object_detection.protos.TemperatureScalingCalibration',
+  full_name='tfmodels.research.object_detection.protos.TemperatureScalingCalibration',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='scaler', full_name='object_detection.protos.TemperatureScalingCalibration.scaler', index=0,
+      name='scaler', full_name='tfmodels.research.object_detection.protos.TemperatureScalingCalibration.scaler', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -349,20 +349,20 @@ _TEMPERATURESCALINGCALIBRATION = _descriptor.Descriptor(
 
 _XYPAIRS_XYPAIR = _descriptor.Descriptor(
   name='XYPair',
-  full_name='object_detection.protos.XYPairs.XYPair',
+  full_name='tfmodels.research.object_detection.protos.XYPairs.XYPair',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x', full_name='object_detection.protos.XYPairs.XYPair.x', index=0,
+      name='x', full_name='tfmodels.research.object_detection.protos.XYPairs.XYPair.x', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='y', full_name='object_detection.protos.XYPairs.XYPair.y', index=1,
+      name='y', full_name='tfmodels.research.object_detection.protos.XYPairs.XYPair.y', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -386,20 +386,20 @@ _XYPAIRS_XYPAIR = _descriptor.Descriptor(
 
 _XYPAIRS = _descriptor.Descriptor(
   name='XYPairs',
-  full_name='object_detection.protos.XYPairs',
+  full_name='tfmodels.research.object_detection.protos.XYPairs',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='x_y_pair', full_name='object_detection.protos.XYPairs.x_y_pair', index=0,
+      name='x_y_pair', full_name='tfmodels.research.object_detection.protos.XYPairs.x_y_pair', index=0,
       number=1, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='training_data_type', full_name='object_detection.protos.XYPairs.training_data_type', index=1,
+      name='training_data_type', full_name='tfmodels.research.object_detection.protos.XYPairs.training_data_type', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -424,20 +424,20 @@ _XYPAIRS = _descriptor.Descriptor(
 
 _SIGMOIDPARAMETERS = _descriptor.Descriptor(
   name='SigmoidParameters',
-  full_name='object_detection.protos.SigmoidParameters',
+  full_name='tfmodels.research.object_detection.protos.SigmoidParameters',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='a', full_name='object_detection.protos.SigmoidParameters.a', index=0,
+      name='a', full_name='tfmodels.research.object_detection.protos.SigmoidParameters.a', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(-1),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='b', full_name='object_detection.protos.SigmoidParameters.b', index=1,
+      name='b', full_name='tfmodels.research.object_detection.protos.SigmoidParameters.b', index=1,
       number=2, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -503,15 +503,15 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 CalibrationConfig = _reflection.GeneratedProtocolMessageType('CalibrationConfig', (_message.Message,), dict(
   DESCRIPTOR = _CALIBRATIONCONFIG,
-  __module__ = 'object_detection.protos.calibration_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.CalibrationConfig)
+  __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.CalibrationConfig)
   ))
 _sym_db.RegisterMessage(CalibrationConfig)
 
 FunctionApproximation = _reflection.GeneratedProtocolMessageType('FunctionApproximation', (_message.Message,), dict(
   DESCRIPTOR = _FUNCTIONAPPROXIMATION,
-  __module__ = 'object_detection.protos.calibration_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.FunctionApproximation)
+  __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.FunctionApproximation)
   ))
 _sym_db.RegisterMessage(FunctionApproximation)
 
@@ -519,21 +519,21 @@ ClassIdFunctionApproximations = _reflection.GeneratedProtocolMessageType('ClassI
 
   ClassIdXyPairsMapEntry = _reflection.GeneratedProtocolMessageType('ClassIdXyPairsMapEntry', (_message.Message,), dict(
     DESCRIPTOR = _CLASSIDFUNCTIONAPPROXIMATIONS_CLASSIDXYPAIRSMAPENTRY,
-    __module__ = 'object_detection.protos.calibration_pb2'
-    # @@protoc_insertion_point(class_scope:object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry)
+    __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+    # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.ClassIdFunctionApproximations.ClassIdXyPairsMapEntry)
     ))
   ,
   DESCRIPTOR = _CLASSIDFUNCTIONAPPROXIMATIONS,
-  __module__ = 'object_detection.protos.calibration_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.ClassIdFunctionApproximations)
+  __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.ClassIdFunctionApproximations)
   ))
 _sym_db.RegisterMessage(ClassIdFunctionApproximations)
 _sym_db.RegisterMessage(ClassIdFunctionApproximations.ClassIdXyPairsMapEntry)
 
 SigmoidCalibration = _reflection.GeneratedProtocolMessageType('SigmoidCalibration', (_message.Message,), dict(
   DESCRIPTOR = _SIGMOIDCALIBRATION,
-  __module__ = 'object_detection.protos.calibration_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.SigmoidCalibration)
+  __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.SigmoidCalibration)
   ))
 _sym_db.RegisterMessage(SigmoidCalibration)
 
@@ -541,21 +541,21 @@ ClassIdSigmoidCalibrations = _reflection.GeneratedProtocolMessageType('ClassIdSi
 
   ClassIdSigmoidParametersMapEntry = _reflection.GeneratedProtocolMessageType('ClassIdSigmoidParametersMapEntry', (_message.Message,), dict(
     DESCRIPTOR = _CLASSIDSIGMOIDCALIBRATIONS_CLASSIDSIGMOIDPARAMETERSMAPENTRY,
-    __module__ = 'object_detection.protos.calibration_pb2'
-    # @@protoc_insertion_point(class_scope:object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry)
+    __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+    # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry)
     ))
   ,
   DESCRIPTOR = _CLASSIDSIGMOIDCALIBRATIONS,
-  __module__ = 'object_detection.protos.calibration_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.ClassIdSigmoidCalibrations)
+  __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.ClassIdSigmoidCalibrations)
   ))
 _sym_db.RegisterMessage(ClassIdSigmoidCalibrations)
 _sym_db.RegisterMessage(ClassIdSigmoidCalibrations.ClassIdSigmoidParametersMapEntry)
 
 TemperatureScalingCalibration = _reflection.GeneratedProtocolMessageType('TemperatureScalingCalibration', (_message.Message,), dict(
   DESCRIPTOR = _TEMPERATURESCALINGCALIBRATION,
-  __module__ = 'object_detection.protos.calibration_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.TemperatureScalingCalibration)
+  __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.TemperatureScalingCalibration)
   ))
 _sym_db.RegisterMessage(TemperatureScalingCalibration)
 
@@ -563,21 +563,21 @@ XYPairs = _reflection.GeneratedProtocolMessageType('XYPairs', (_message.Message,
 
   XYPair = _reflection.GeneratedProtocolMessageType('XYPair', (_message.Message,), dict(
     DESCRIPTOR = _XYPAIRS_XYPAIR,
-    __module__ = 'object_detection.protos.calibration_pb2'
-    # @@protoc_insertion_point(class_scope:object_detection.protos.XYPairs.XYPair)
+    __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+    # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.XYPairs.XYPair)
     ))
   ,
   DESCRIPTOR = _XYPAIRS,
-  __module__ = 'object_detection.protos.calibration_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.XYPairs)
+  __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.XYPairs)
   ))
 _sym_db.RegisterMessage(XYPairs)
 _sym_db.RegisterMessage(XYPairs.XYPair)
 
 SigmoidParameters = _reflection.GeneratedProtocolMessageType('SigmoidParameters', (_message.Message,), dict(
   DESCRIPTOR = _SIGMOIDPARAMETERS,
-  __module__ = 'object_detection.protos.calibration_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.SigmoidParameters)
+  __module__ = 'tfmodels.research.object_detection.protos.calibration_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.SigmoidParameters)
   ))
 _sym_db.RegisterMessage(SigmoidParameters)
 

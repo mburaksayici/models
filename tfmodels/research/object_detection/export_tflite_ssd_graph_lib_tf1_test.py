@@ -29,9 +29,9 @@ from object_detection import exporter
 from object_detection.builders import graph_rewriter_builder
 from object_detection.builders import model_builder
 from object_detection.core import model
-from object_detection.protos import graph_rewriter_pb2
-from object_detection.protos import pipeline_pb2
-from object_detection.protos import post_processing_pb2
+from tfmodels.research.object_detection.protos import graph_rewriter_pb2
+from tfmodels.research.object_detection.protos import pipeline_pb2
+from tfmodels.research.object_detection.protos import post_processing_pb2
 from object_detection.utils import tf_version
 
 # pylint: disable=g-import-not-at-top

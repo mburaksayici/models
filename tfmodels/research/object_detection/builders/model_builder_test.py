@@ -21,9 +21,9 @@ from object_detection.builders import model_builder
 from object_detection.meta_architectures import faster_rcnn_meta_arch
 from object_detection.meta_architectures import rfcn_meta_arch
 from object_detection.meta_architectures import ssd_meta_arch
-from object_detection.protos import hyperparams_pb2
-from object_detection.protos import losses_pb2
-from object_detection.protos import model_pb2
+from tfmodels.research.object_detection.protos import hyperparams_pb2
+from tfmodels.research.object_detection.protos import losses_pb2
+from tfmodels.research.object_detection.protos import model_pb2
 from object_detection.utils import test_case
 
 

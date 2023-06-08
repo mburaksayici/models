@@ -31,7 +31,7 @@ from object_detection import exporter_lib_v2
 from object_detection import inputs
 from object_detection import model_lib_v2
 from object_detection.core import model
-from object_detection.protos import train_pb2
+from tfmodels.research.object_detection.protos import train_pb2
 from object_detection.utils import config_util
 from object_detection.utils import tf_version
 

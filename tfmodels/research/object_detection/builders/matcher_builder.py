@@ -16,7 +16,7 @@
 """A function to build an object detection matcher from configuration."""
 
 from object_detection.matchers import argmax_matcher
-from object_detection.protos import matcher_pb2
+from tfmodels.research.object_detection.protos import matcher_pb2
 from object_detection.utils import tf_version
 
 if tf_version.is_tf1():

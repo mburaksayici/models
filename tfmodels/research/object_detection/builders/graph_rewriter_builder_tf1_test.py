@@ -19,7 +19,7 @@ import tensorflow.compat.v1 as tf
 import tf_slim as slim
 
 from object_detection.builders import graph_rewriter_builder
-from object_detection.protos import graph_rewriter_pb2
+from tfmodels.research.object_detection.protos import graph_rewriter_pb2
 from object_detection.utils import tf_version
 
 

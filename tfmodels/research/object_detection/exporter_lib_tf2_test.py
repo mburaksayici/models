@@ -30,7 +30,7 @@ from object_detection import exporter_lib_v2
 from object_detection.builders import model_builder
 from object_detection.core import model
 from object_detection.core import standard_fields as fields
-from object_detection.protos import pipeline_pb2
+from tfmodels.research.object_detection.protos import pipeline_pb2
 from object_detection.utils import dataset_util
 from object_detection.utils import tf_version
 

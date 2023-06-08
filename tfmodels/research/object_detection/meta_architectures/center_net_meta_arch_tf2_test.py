@@ -31,7 +31,7 @@ from object_detection.core import standard_fields as fields
 from object_detection.core import target_assigner as cn_assigner
 from object_detection.meta_architectures import center_net_meta_arch as cnma
 from object_detection.models import center_net_resnet_feature_extractor
-from object_detection.protos import post_processing_pb2
+from tfmodels.research.object_detection.protos import post_processing_pb2
 from object_detection.utils import test_case
 from object_detection.utils import tf_version
 

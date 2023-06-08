@@ -23,7 +23,7 @@ from object_detection.core import losses
 from object_detection.core import model
 from object_detection.core import standard_fields as fields
 from object_detection.legacy import trainer
-from object_detection.protos import train_pb2
+from tfmodels.research.object_detection.protos import train_pb2
 from object_detection.utils import tf_version
 
 

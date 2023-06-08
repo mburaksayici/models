@@ -18,8 +18,8 @@ from object_detection.core import standard_fields as fields
 from object_detection.meta_architectures import center_net_meta_arch
 from object_detection.models.keras_models import hourglass_network
 from object_detection.models.keras_models import resnet_v1
-from object_detection.protos import center_net_pb2
-from object_detection.protos import losses_pb2
+from tfmodels.research.object_detection.protos import center_net_pb2
+from tfmodels.research.object_detection.protos import losses_pb2
 from object_detection.utils import shape_utils
 from object_detection.utils import spatial_transform_ops
 from object_detection.utils import tf_version

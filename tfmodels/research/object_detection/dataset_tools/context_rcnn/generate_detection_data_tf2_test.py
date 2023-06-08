@@ -29,7 +29,7 @@ import tensorflow as tf
 from object_detection import exporter_lib_v2
 from object_detection.builders import model_builder
 from object_detection.core import model
-from object_detection.protos import pipeline_pb2
+from tfmodels.research.object_detection.protos import pipeline_pb2
 from object_detection.utils import tf_version
 
 if tf_version.is_tf2():

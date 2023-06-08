@@ -4,7 +4,7 @@
 // and forth as needed.
 syntax = "proto2";
 
-package object_detection.protos;
+package tfmodels.research.object_detection.protos;
 
 // LVIS frequency:
 enum LVISFrequency {

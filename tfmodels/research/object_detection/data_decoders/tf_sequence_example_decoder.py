@@ -130,7 +130,7 @@ class TfSequenceExampleDecoder(data_decoder.DataDecoder):
 
     Args:
       label_map_proto_file: a file path to a
-        object_detection.protos.StringIntLabelMap proto. The
+        tfmodels.research.object_detection.protos.StringIntLabelMap proto. The
         label map will be used to map IDs of 'region/label/string'.
         It is assumed that 'region/label/string' will be in the data.
       load_context_features: Whether to load information from context_features,

@@ -27,8 +27,8 @@ from object_detection.core import losses
 from object_detection.meta_architectures import deepmac_meta_arch
 from object_detection.models import center_net_hourglass_feature_extractor
 from object_detection.models.keras_models import hourglass_network
-from object_detection.protos import center_net_pb2
-from object_detection.protos import model_pb2
+from tfmodels.research.object_detection.protos import center_net_pb2
+from tfmodels.research.object_detection.protos import model_pb2
 from object_detection.utils import tf_version
 
 

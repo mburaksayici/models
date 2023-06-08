@@ -22,7 +22,7 @@ import tensorflow.compat.v2 as tf
 from google.protobuf import text_format
 from object_detection.builders import hyperparams_builder
 from object_detection.models import ssd_efficientnet_bifpn_feature_extractor
-from object_detection.protos import hyperparams_pb2
+from tfmodels.research.object_detection.protos import hyperparams_pb2
 from object_detection.utils import test_case
 from object_detection.utils import tf_version
 

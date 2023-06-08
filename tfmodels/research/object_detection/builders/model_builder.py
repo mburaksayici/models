@@ -39,8 +39,8 @@ from object_detection.meta_architectures import faster_rcnn_meta_arch
 from object_detection.meta_architectures import rfcn_meta_arch
 from object_detection.meta_architectures import ssd_meta_arch
 from object_detection.predictors.heads import mask_head
-from object_detection.protos import losses_pb2
-from object_detection.protos import model_pb2
+from tfmodels.research.object_detection.protos import losses_pb2
+from tfmodels.research.object_detection.protos import model_pb2
 from object_detection.utils import label_map_util
 from object_detection.utils import ops
 from object_detection.utils import spatial_transform_ops as spatial_ops

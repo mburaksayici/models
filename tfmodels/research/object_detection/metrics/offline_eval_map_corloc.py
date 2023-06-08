@@ -18,12 +18,12 @@ This executable evaluates precomputed detections produced by a detection
 model and writes the evaluation results into csv file metrics.csv, stored
 in the directory, specified by --eval_dir.
 
-The evaluation metrics set is supplied in object_detection.protos.EvalConfig
+The evaluation metrics set is supplied in tfmodels.research.object_detection.protos.EvalConfig
 in metrics_set field.
 Currently two set of metrics are supported:
 - pascal_voc_metrics: standard PASCAL VOC 2007 metric
 - open_images_detection_metrics: Open Image V2 metric
-All other field of object_detection.protos.EvalConfig are ignored.
+All other field of tfmodels.research.object_detection.protos.EvalConfig are ignored.
 
 Example usage:
     ./compute_metrics \
@@ -78,9 +78,9 @@ def read_data_and_evaluate(input_config, eval_config):
 
   Args:
     input_config: input config proto of type
-      object_detection.protos.InputReader.
+      tfmodels.research.object_detection.protos.InputReader.
     eval_config: evaluation config proto of type
-      object_detection.protos.EvalConfig.
+      tfmodels.research.object_detection.protos.EvalConfig.
 
   Returns:
     Evaluated detections metrics.

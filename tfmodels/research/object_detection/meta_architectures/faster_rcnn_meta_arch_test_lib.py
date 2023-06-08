@@ -32,9 +32,9 @@ from object_detection.core import losses
 from object_detection.core import post_processing
 from object_detection.core import target_assigner
 from object_detection.meta_architectures import faster_rcnn_meta_arch
-from object_detection.protos import box_predictor_pb2
-from object_detection.protos import hyperparams_pb2
-from object_detection.protos import post_processing_pb2
+from tfmodels.research.object_detection.protos import box_predictor_pb2
+from tfmodels.research.object_detection.protos import hyperparams_pb2
+from tfmodels.research.object_detection.protos import post_processing_pb2
 from object_detection.utils import spatial_transform_ops as spatial_ops
 from object_detection.utils import test_case
 from object_detection.utils import test_utils

@@ -49,8 +49,8 @@ message CenterSizeEncoding {
 //                + anchor.x;
 // See mobile_ssd::DecodeCenterSizeBoxes for more details.
 // This coder is compatible with models trained using
-// object_detection.protos.FasterRcnnBoxCoder and
-// object_detection.protos.KeypointBoxCoder.
+// tfmodels.research.object_detection.protos.FasterRcnnBoxCoder and
+// tfmodels.research.object_detection.protos.KeypointBoxCoder.
 message CenterSizeOffsetCoder {
   // Scale factor for encoded box center offset.
   optional float y_scale = 1 [default = 10.0];
@@ -90,7 +90,7 @@ message BoxCornerEncoding {
 // This coder doesn't support keypoints.
 // See mobile_ssd::DecodeBoxCornerBoxes for more details.
 // This coder is compatible with models trained using
-// object_detection.protos.MeanStddevBoxCoder.
+// tfmodels.research.object_detection.protos.MeanStddevBoxCoder.
 message BoxCornerOffsetCoder {
   // The standard deviation used to encode and decode boxes.
   optional float stddev = 1 [default = 0.01];

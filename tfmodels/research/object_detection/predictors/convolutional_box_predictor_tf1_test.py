@@ -32,7 +32,7 @@ from object_detection.predictors import convolutional_box_predictor as box_predi
 from object_detection.predictors.heads import box_head
 from object_detection.predictors.heads import class_head
 from object_detection.predictors.heads import mask_head
-from object_detection.protos import hyperparams_pb2
+from tfmodels.research.object_detection.protos import hyperparams_pb2
 from object_detection.utils import test_case
 from object_detection.utils import tf_version
 

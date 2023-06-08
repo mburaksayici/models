@@ -22,7 +22,7 @@ from tensorflow.python.framework import dtypes
 from tensorflow.python.framework import ops
 from lstm_object_detection.builders import graph_rewriter_builder
 from lstm_object_detection.protos import quant_overrides_pb2
-from object_detection.protos import graph_rewriter_pb2
+from tfmodels.research.object_detection.protos import graph_rewriter_pb2
 
 
 class QuantizationBuilderTest(tf.test.TestCase):

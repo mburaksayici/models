@@ -23,7 +23,7 @@ from scipy import interpolate
 from six.moves import zip
 import tensorflow.compat.v1 as tf
 from object_detection.builders import calibration_builder
-from object_detection.protos import calibration_pb2
+from tfmodels.research.object_detection.protos import calibration_pb2
 from object_detection.utils import test_case
 
 

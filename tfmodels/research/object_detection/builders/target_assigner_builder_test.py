@@ -21,7 +21,7 @@ from google.protobuf import text_format
 
 from object_detection.builders import target_assigner_builder
 from object_detection.core import target_assigner
-from object_detection.protos import target_assigner_pb2
+from tfmodels.research.object_detection.protos import target_assigner_pb2
 
 
 class TargetAssignerBuilderTest(tf.test.TestCase):

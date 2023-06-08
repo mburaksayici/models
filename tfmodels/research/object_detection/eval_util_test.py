@@ -30,7 +30,7 @@ from google.protobuf import text_format
 from object_detection import eval_util
 from object_detection.core import standard_fields as fields
 from object_detection.metrics import coco_evaluation
-from object_detection.protos import eval_pb2
+from tfmodels.research.object_detection.protos import eval_pb2
 from object_detection.utils import test_case
 from object_detection.utils import tf_version
 

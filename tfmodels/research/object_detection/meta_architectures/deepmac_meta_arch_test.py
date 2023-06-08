@@ -14,7 +14,7 @@ from object_detection.core import losses
 from object_detection.core import preprocessor
 from object_detection.meta_architectures import center_net_meta_arch
 from object_detection.meta_architectures import deepmac_meta_arch
-from object_detection.protos import center_net_pb2
+from tfmodels.research.object_detection.protos import center_net_pb2
 from object_detection.utils import tf_version
 
 

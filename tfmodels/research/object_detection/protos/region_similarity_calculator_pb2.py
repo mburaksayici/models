@@ -16,10 +16,10 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='object_detection/protos/region_similarity_calculator.proto',
-  package='object_detection.protos',
+  package='tfmodels.research.object_detection.protos',
   syntax='proto2',
   serialized_options=None,
-  serialized_pb=_b('\n:object_detection/protos/region_similarity_calculator.proto\x12\x17object_detection.protos\"\xde\x02\n\x1aRegionSimilarityCalculator\x12N\n\x16neg_sq_dist_similarity\x18\x01 \x01(\x0b\x32,.object_detection.protos.NegSqDistSimilarityH\x00\x12@\n\x0eiou_similarity\x18\x02 \x01(\x0b\x32&.object_detection.protos.IouSimilarityH\x00\x12@\n\x0eioa_similarity\x18\x03 \x01(\x0b\x32&.object_detection.protos.IoaSimilarityH\x00\x12W\n\x1athresholded_iou_similarity\x18\x04 \x01(\x0b\x32\x31.object_detection.protos.ThresholdedIouSimilarityH\x00\x42\x13\n\x11region_similarity\"\x15\n\x13NegSqDistSimilarity\"\x0f\n\rIouSimilarity\"\x0f\n\rIoaSimilarity\"6\n\x18ThresholdedIouSimilarity\x12\x1a\n\riou_threshold\x18\x01 \x01(\x02:\x03\x30.5')
+  serialized_pb=_b('\n:object_detection/protos/region_similarity_calculator.proto\x12\x17object_detection.protos\"\xde\x02\n\x1aRegionSimilarityCalculator\x12N\n\x16neg_sq_dist_similarity\x18\x01 \x01(\x0b\x32,.tfmodels.research.object_detection.protos.NegSqDistSimilarityH\x00\x12@\n\x0eiou_similarity\x18\x02 \x01(\x0b\x32&.tfmodels.research.object_detection.protos.IouSimilarityH\x00\x12@\n\x0eioa_similarity\x18\x03 \x01(\x0b\x32&.tfmodels.research.object_detection.protos.IoaSimilarityH\x00\x12W\n\x1athresholded_iou_similarity\x18\x04 \x01(\x0b\x32\x31.tfmodels.research.object_detection.protos.ThresholdedIouSimilarityH\x00\x42\x13\n\x11region_similarity\"\x15\n\x13NegSqDistSimilarity\"\x0f\n\rIouSimilarity\"\x0f\n\rIoaSimilarity\"6\n\x18ThresholdedIouSimilarity\x12\x1a\n\riou_threshold\x18\x01 \x01(\x02:\x03\x30.5')
 )
 
 
@@ -27,34 +27,34 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _REGIONSIMILARITYCALCULATOR = _descriptor.Descriptor(
   name='RegionSimilarityCalculator',
-  full_name='object_detection.protos.RegionSimilarityCalculator',
+  full_name='tfmodels.research.object_detection.protos.RegionSimilarityCalculator',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='neg_sq_dist_similarity', full_name='object_detection.protos.RegionSimilarityCalculator.neg_sq_dist_similarity', index=0,
+      name='neg_sq_dist_similarity', full_name='tfmodels.research.object_detection.protos.RegionSimilarityCalculator.neg_sq_dist_similarity', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='iou_similarity', full_name='object_detection.protos.RegionSimilarityCalculator.iou_similarity', index=1,
+      name='iou_similarity', full_name='tfmodels.research.object_detection.protos.RegionSimilarityCalculator.iou_similarity', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='ioa_similarity', full_name='object_detection.protos.RegionSimilarityCalculator.ioa_similarity', index=2,
+      name='ioa_similarity', full_name='tfmodels.research.object_detection.protos.RegionSimilarityCalculator.ioa_similarity', index=2,
       number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='thresholded_iou_similarity', full_name='object_detection.protos.RegionSimilarityCalculator.thresholded_iou_similarity', index=3,
+      name='thresholded_iou_similarity', full_name='tfmodels.research.object_detection.protos.RegionSimilarityCalculator.thresholded_iou_similarity', index=3,
       number=4, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -72,7 +72,7 @@ _REGIONSIMILARITYCALCULATOR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='region_similarity', full_name='object_detection.protos.RegionSimilarityCalculator.region_similarity',
+      name='region_similarity', full_name='tfmodels.research.object_detection.protos.RegionSimilarityCalculator.region_similarity',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=88,
@@ -82,7 +82,7 @@ _REGIONSIMILARITYCALCULATOR = _descriptor.Descriptor(
 
 _NEGSQDISTSIMILARITY = _descriptor.Descriptor(
   name='NegSqDistSimilarity',
-  full_name='object_detection.protos.NegSqDistSimilarity',
+  full_name='tfmodels.research.object_detection.protos.NegSqDistSimilarity',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -106,7 +106,7 @@ _NEGSQDISTSIMILARITY = _descriptor.Descriptor(
 
 _IOUSIMILARITY = _descriptor.Descriptor(
   name='IouSimilarity',
-  full_name='object_detection.protos.IouSimilarity',
+  full_name='tfmodels.research.object_detection.protos.IouSimilarity',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -130,7 +130,7 @@ _IOUSIMILARITY = _descriptor.Descriptor(
 
 _IOASIMILARITY = _descriptor.Descriptor(
   name='IoaSimilarity',
-  full_name='object_detection.protos.IoaSimilarity',
+  full_name='tfmodels.research.object_detection.protos.IoaSimilarity',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -154,13 +154,13 @@ _IOASIMILARITY = _descriptor.Descriptor(
 
 _THRESHOLDEDIOUSIMILARITY = _descriptor.Descriptor(
   name='ThresholdedIouSimilarity',
-  full_name='object_detection.protos.ThresholdedIouSimilarity',
+  full_name='tfmodels.research.object_detection.protos.ThresholdedIouSimilarity',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='iou_threshold', full_name='object_detection.protos.ThresholdedIouSimilarity.iou_threshold', index=0,
+      name='iou_threshold', full_name='tfmodels.research.object_detection.protos.ThresholdedIouSimilarity.iou_threshold', index=0,
       number=1, type=2, cpp_type=6, label=1,
       has_default_value=True, default_value=float(0.5),
       message_type=None, enum_type=None, containing_type=None,
@@ -207,36 +207,36 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 RegionSimilarityCalculator = _reflection.GeneratedProtocolMessageType('RegionSimilarityCalculator', (_message.Message,), dict(
   DESCRIPTOR = _REGIONSIMILARITYCALCULATOR,
-  __module__ = 'object_detection.protos.region_similarity_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.RegionSimilarityCalculator)
+  __module__ = 'tfmodels.research.object_detection.protos.region_similarity_calculator_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.RegionSimilarityCalculator)
   ))
 _sym_db.RegisterMessage(RegionSimilarityCalculator)
 
 NegSqDistSimilarity = _reflection.GeneratedProtocolMessageType('NegSqDistSimilarity', (_message.Message,), dict(
   DESCRIPTOR = _NEGSQDISTSIMILARITY,
-  __module__ = 'object_detection.protos.region_similarity_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.NegSqDistSimilarity)
+  __module__ = 'tfmodels.research.object_detection.protos.region_similarity_calculator_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.NegSqDistSimilarity)
   ))
 _sym_db.RegisterMessage(NegSqDistSimilarity)
 
 IouSimilarity = _reflection.GeneratedProtocolMessageType('IouSimilarity', (_message.Message,), dict(
   DESCRIPTOR = _IOUSIMILARITY,
-  __module__ = 'object_detection.protos.region_similarity_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.IouSimilarity)
+  __module__ = 'tfmodels.research.object_detection.protos.region_similarity_calculator_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.IouSimilarity)
   ))
 _sym_db.RegisterMessage(IouSimilarity)
 
 IoaSimilarity = _reflection.GeneratedProtocolMessageType('IoaSimilarity', (_message.Message,), dict(
   DESCRIPTOR = _IOASIMILARITY,
-  __module__ = 'object_detection.protos.region_similarity_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.IoaSimilarity)
+  __module__ = 'tfmodels.research.object_detection.protos.region_similarity_calculator_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.IoaSimilarity)
   ))
 _sym_db.RegisterMessage(IoaSimilarity)
 
 ThresholdedIouSimilarity = _reflection.GeneratedProtocolMessageType('ThresholdedIouSimilarity', (_message.Message,), dict(
   DESCRIPTOR = _THRESHOLDEDIOUSIMILARITY,
-  __module__ = 'object_detection.protos.region_similarity_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:object_detection.protos.ThresholdedIouSimilarity)
+  __module__ = 'tfmodels.research.object_detection.protos.region_similarity_calculator_pb2'
+  # @@protoc_insertion_point(class_scope:tfmodels.research.object_detection.protos.ThresholdedIouSimilarity)
   ))
 _sym_db.RegisterMessage(ThresholdedIouSimilarity)
 

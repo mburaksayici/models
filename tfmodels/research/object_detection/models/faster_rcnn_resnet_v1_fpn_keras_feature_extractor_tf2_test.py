@@ -21,7 +21,7 @@ from google.protobuf import text_format
 
 from object_detection.builders import hyperparams_builder
 from object_detection.models import faster_rcnn_resnet_v1_fpn_keras_feature_extractor as frcnn_res_fpn
-from object_detection.protos import hyperparams_pb2
+from tfmodels.research.object_detection.protos import hyperparams_pb2
 from object_detection.utils import tf_version
 
 

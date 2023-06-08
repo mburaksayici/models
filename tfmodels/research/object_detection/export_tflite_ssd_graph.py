@@ -94,7 +94,7 @@ python object_detection/export_tflite_ssd_graph.py \
 import tensorflow.compat.v1 as tf
 from google.protobuf import text_format
 from object_detection import export_tflite_ssd_graph_lib
-from object_detection.protos import pipeline_pb2
+from tfmodels.research.object_detection.protos import pipeline_pb2
 
 flags = tf.app.flags
 flags.DEFINE_string('output_directory', None, 'Path to write outputs.')

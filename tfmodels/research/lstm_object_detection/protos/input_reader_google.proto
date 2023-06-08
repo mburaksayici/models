@@ -5,7 +5,7 @@ package lstm_object_detection.protos;
 import "object_detection/protos/input_reader.proto";
 
 message GoogleInputReader {
-  extend object_detection.protos.ExternalInputReader {
+  extend tfmodels.research.object_detection.protos.ExternalInputReader {
     optional GoogleInputReader google_input_reader = 444;
   }
 

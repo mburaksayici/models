@@ -24,7 +24,7 @@ from google.protobuf import text_format
 
 from object_detection.builders import hyperparams_builder
 from object_detection.models import feature_map_generators
-from object_detection.protos import hyperparams_pb2
+from tfmodels.research.object_detection.protos import hyperparams_pb2
 from object_detection.utils import test_case
 from object_detection.utils import test_utils
 from object_detection.utils import tf_version

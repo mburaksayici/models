@@ -5,7 +5,7 @@ package lstm_object_detection.protos;
 import "object_detection/protos/pipeline.proto";
 import "lstm_object_detection/protos/quant_overrides.proto";
 
-extend object_detection.protos.TrainEvalPipelineConfig {
+extend tfmodels.research.object_detection.protos.TrainEvalPipelineConfig {
   optional LstmModel lstm_model = 205743444;
   optional QuantOverrides quant_overrides = 246059837;
 }

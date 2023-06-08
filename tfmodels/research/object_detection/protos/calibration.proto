@@ -4,7 +4,7 @@
 
 syntax = "proto2";
 
-package object_detection.protos;
+package tfmodels.research.object_detection.protos;
 
 // Message wrapper for various calibration configurations.
 message CalibrationConfig {

@@ -24,7 +24,7 @@ import tensorflow.compat.v2 as tf
 from object_detection import export_tflite_graph_lib_tf2
 from object_detection.builders import model_builder
 from object_detection.core import model
-from object_detection.protos import pipeline_pb2
+from tfmodels.research.object_detection.protos import pipeline_pb2
 from object_detection.utils import tf_version
 from google.protobuf import text_format
 

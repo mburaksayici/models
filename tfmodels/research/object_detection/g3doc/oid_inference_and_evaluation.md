@@ -233,9 +233,9 @@ python -m object_detection/metrics/offline_eval_map_corloc \
   --input_config_path=${SPLIT}_eval_metrics/${SPLIT}_input_config.pbtxt
 ```
 
-The first configuration file contains an `object_detection.protos.InputReader`
+The first configuration file contains an `tfmodels.research.object_detection.protos.InputReader`
 message that describes the location of the necessary input files. The second
-file contains an `object_detection.protos.EvalConfig` message that describes the
+file contains an `tfmodels.research.object_detection.protos.EvalConfig` message that describes the
 evaluation metric. For more information about these protos see the corresponding
 source files.
 
